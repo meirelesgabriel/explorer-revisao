@@ -30,6 +30,7 @@ header h1 {
     align-items: center;
     line-height: 4.0rem;
     color: #B52184;
+
 }
 
 header h2 {
@@ -90,6 +91,8 @@ main div section h1 {
     color: #B52184;
 
     margin-top: 3.3rem;
+
+    min-width: 22.9rem;
 }
 
 main div section p {
@@ -100,6 +103,8 @@ main div section p {
     color: #312D64;
 
     margin-top: 1.9rem;
+
+   
 }
 
 .formu {
