@@ -5,6 +5,10 @@
     font-size: 62.5%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     background-color: #F9F4FB;
     margin: 0 auto;
@@ -48,12 +52,13 @@ header button {
     background: #F9F4FB;
     border: 0.4rem solid #B52184;
     border-radius: 76rem;
-
+    cursor: pointer;
     
 }
 
 header button svg {
     margin:auto;
+    
 }
 
 
@@ -122,11 +127,28 @@ main div section p {
 }
 
 .formu form label {
-    display: none;
     font-family: 'Mulish', sans-serif;
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 100%;
+}
+
+.formu form label {
+    display: none;
+}
+
+.label-icon {
+    position: relative;
+    bottom:2.8rem;
+    left:1.6rem;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+textarea:focus::placeholder {
+    color:transparent;
 }
 
 .formu form input, .formu form textarea {
@@ -136,7 +158,7 @@ main div section p {
     height: 1.5rem;
     padding: 1rem;
 
-    margin: 1rem 0;
+    
 
     width: 28rem;
 
@@ -149,8 +171,15 @@ main div section p {
     color: #312D64;
 }
 
-#mensagem {
+input.with-icon {
+    text-indent: 3.8rem;
+    background-image: url("assets/marte.png");
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+}
 
+#mensagem {
+    margin-bottom:2rem;
     height: 9.8rem;
 
 }
@@ -167,6 +196,7 @@ main div section p {
     border-radius: 1.6rem;
 
     max-width: 16rem;
+    cursor: pointer;
 
 }
 
